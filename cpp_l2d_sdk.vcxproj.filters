@@ -29,5 +29,8 @@
     <ClInclude Include="src\core\math\trig.hpp">
       <Filter>Header Files\core\math</Filter>
     </ClInclude>
+    <ClInclude Include="src\core\math\package.hpp">
+      <Filter>Header Files\core\math</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
