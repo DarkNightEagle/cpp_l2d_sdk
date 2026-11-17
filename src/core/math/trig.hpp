@@ -1,9 +1,9 @@
 #ifndef TRIG_HPP
 #define TRIG_HPP
-#include <vec2.hpp>
-#include <vec3.hpp>
+#include <glm/vec2.hpp>
+#include <glm/vec3.hpp>
 #include <array>
-#include <geometric.hpp>
+#include <glm/geometric.hpp>
 #include <vector>
 namespace l2d_cpp
 {
@@ -14,6 +14,7 @@ namespace l2d_cpp
 	// результат 0 - все точки лежат на одной прямой 
 	const float inline sign(const glm::vec2& p1, const glm::vec2& p2, const glm::vec2& p3)
 	{
+		
 		return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
 	}
 	/// 2d- треугольник / 2d triangle

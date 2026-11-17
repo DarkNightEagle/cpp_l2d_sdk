@@ -16,8 +16,9 @@
 
 #ifndef __PACKAGE_HPP__
 #define __PACKAGE_HPP__
-#include <vec2.hpp>
-#include <mat4x4.hpp>
+#include <glm/vec2.hpp>
+#include <glm/mat4x4.hpp>
+#include <glm/vec2.hpp>
 class Camera {
 protected:
     glm::vec2 size;

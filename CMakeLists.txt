@@ -16,10 +16,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 
 add_library(${PROJECT_NAME} STATIC
+    src/core/math/package.cpp
     src/core/math/package.hpp
     src/core/math/trig.hpp
 )
-target_link_libraries(${PROJECT_NAME} PRIVATE glm::glm)
-target_include_directories(${PROJECT_NAME} PUBLIC 
-${CMAKE_CURRENT_BINARY_DIR}/include
-)
+target_include_directories(${PROJECT_NAME} PUBLIC src)
+target_link_libraries(${PROJECT_NAME} PUBLIC glm::glm)
+# target_include_directories(${PROJECT_NAME} PUBLIC 
+# ${CMAKE_CURRENT_BINARY_DIR}/include
+# )
