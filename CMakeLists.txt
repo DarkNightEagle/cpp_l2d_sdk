@@ -19,6 +19,10 @@ add_library(${PROJECT_NAME} STATIC
     src/core/math/package.cpp
     src/core/math/package.hpp
     src/core/math/trig.hpp
+    src/core/math/range.hpp
+    src/core/math/deform.hpp
+    src/core/math/math.hpp
+    src/core/math/transform.hpp
 )
 target_include_directories(${PROJECT_NAME} PUBLIC src)
 target_link_libraries(${PROJECT_NAME} PUBLIC glm::glm)
